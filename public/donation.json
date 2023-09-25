@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "picture": "./images/Health.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Monitor your health with this advanced electronic device. Stay fit and active with real-time health data.",
+        "price": 199.99
+    },
+    {
+        "id": 2,
+        "picture": "./images/Education.png",
+        "title": "Good education",
+        "category": "Education",
+        "category_bg_color": "#FF444A",
+        "card_bg_color": "#FF444A33",
+        "text_button_bg_color": "#FF444A",
+        "description": "Dress smart and stylish for your educational journey. Explore trendy clothing options for students.",
+        "price": 49.99
+    },
+    {
+        "id": 3,
+        "picture": "./images/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg_color": "#F87147",
+        "card_bg_color": "#F8714733",
+        "text_button_bg_color": "#F87147",
+        "description": "Experience delightful culinary adventures at home. Discover kitchen essentials and gourmet ingredients.",
+        "price": 149.99
+    },
+    {
+        "id": 4,
+        "picture": "./images/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F",
+        "card_bg_color": "#79C23F33",
+        "text_button_bg_color": "#79C23F",
+        "description": "Get active and stay comfortable with our sports and outdoor clothing collection. Elevate your outdoor experiences.",
+        "price": 79.99
+    },
+    {
+        "id": 5,
+        "picture": "./images/Health.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Prioritize your well-being with advanced electronic health solutions. Achieve your fitness goals effortlessly.",
+        "price": 299.99
+    },
+    {
+        "id": 6,
+        "picture": "./images/Education.png",
+        "title": "Good education",
+        "category": "Education",
+        "category_bg_color": "#FF444A",
+        "card_bg_color": "#FF444A33",
+        "text_button_bg_color": "#FF444A",
+        "description": "Dress confidently for your educational pursuits. Find comfortable and stylish clothing for students.",
+        "price": 39.99
+    },
+    {
+        "id": 7,
+        "picture": "./images/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg_color": "#F87147",
+        "card_bg_color": "#F8714733",
+        "text_button_bg_color": "#F87147",
+        "description": "Elevate your home dining experience. Discover high-quality kitchen essentials and gourmet delights.",
+        "price": 179.99
+    },
+    {
+        "id": 8,
+        "picture": "./images/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F",
+        "card_bg_color": "#79C23F33",
+        "text_button_bg_color": "#79C23F",
+        "description": "Embrace outdoor adventures with comfortable and functional sports clothing. Enhance your outdoor lifestyle.",
+        "price": 69.99
+    },
+    {
+        "id": 9,
+        "picture": "./images/Health.png",
+        "title": "Clean water for children",
+        "category": "Health",
+        "category_bg_color": "#0052FF33",
+        "card_bg_color": "#0052FF26",
+        "text_button_bg_color": "#0052FF",
+        "description": "Take control of your health journey with cutting-edge electronic health devices. Optimize your well-being.",
+        "price": 249.99
+    },
+    {
+        "id": 10,
+        "picture": "./images/Education.png",
+        "title": "Good education",
+        "category": "Education",
+        "category_bg_color": "#FF444A",
+        "card_bg_color": "#FF444A33",
+        "text_button_bg_color": "#FF444A",
+        "description": "Stay stylish while focusing on your studies. Explore a wide range of clothing options for students.",
+        "price": 59.99
+    },
+    {
+        "id": 11,
+        "picture": "./images/Food.png",
+        "title": "Better Food for Everyone",
+        "category": "Food",
+        "category_bg_color": "#F87147",
+        "card_bg_color": "#F8714733",
+        "text_button_bg_color": "#F87147",
+        "description": "Indulge in delightful home dining. Find essential kitchen tools and premium ingredients for your recipes.",
+        "price": 129.99
+    },
+    {
+        "id": 12,
+        "picture": "./images/Clothing.png",
+        "title": "Used Clothing Drive",
+        "category": "Clothing",
+        "category_bg_color": "#79C23F",
+        "card_bg_color": "#79C23F33",
+        "text_button_bg_color": "#79C23F",
+        "description": "Discover fashionable electronics clothing options for tech enthusiasts. Stay in style and connected.",
+        "price": 199.99
+    }
+]

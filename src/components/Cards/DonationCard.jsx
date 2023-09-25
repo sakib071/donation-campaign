@@ -1,11 +1,12 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 
 const DonationCard = ({ card }) => {
 
-    const { picture, title, category, text_button_bg_color, card_bg_color } = card || {}
+    const { id, picture, title, category, text_button_bg_color, card_bg_color } = card || {}
 
     return (
-        <Link className="hover:w-full transition ease-in-out">
+        <Link to={`/cards/${id}`} className="hover:w-full transition ease-in-out">
             <div className="card card-compact shadow-xl flex flex-col mx-auto max-w-[22rem] rounded-xl hover:scale-105" style={{ backgroundColor: card_bg_color }}>
                 <figure><img className="w-full" src={picture} alt="" /></figure>
                 <div className="card-body">

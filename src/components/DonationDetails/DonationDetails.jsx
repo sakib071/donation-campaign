@@ -1,38 +1,29 @@
 import PropTypes from 'prop-types';
-// import swal from 'sweetalert';
+import { useEffect, useState } from 'react';
+import swal from 'sweetalert';
 
 
 const DonationDetails = ({ cardOne }) => {
 
     const { id, picture, title, price, text_button_bg_color, card_bg_color } = cardOne || {}
 
-    console.log(id);
+    const [donationToDisplay, setDonationToDisplay] = useState([]);
+    const [noDataFound, setNoDataFound] = useState(false);
+    const [isShow, setIsShow] = useState(false)
 
-    // const addedDonationArray = [];
+    useEffect(() => {
+        const donatedItems = JSON.parse(localStorage.getItem("donation"));
 
-    console.log("image show: ", id);
 
-    // const handleAddDonation = () => {
+        if (donatedItems) {
+            setDonationToDisplay(donatedItems)
+        }
+        else {
+            setNoDataFound("No Data Found");
+            swal("Sorry!", "Empty Cart", "error");
+        }
+    }, [])
 
-    //     const donatedItems = JSON.parse(localStorage.getItem("donation"));
-
-    //     if (!donatedItems) {
-    //         addedDonationArray.push(cardOne);
-    //         localStorage.setItem("donation", JSON.stringify(addedDonationArray));
-    //         swal("Good job!", "Donation added successfully!", "success");
-    //     }
-    //     else {
-    //         const isExists = donatedItems.find(cardOne => cardOne.id == id)
-    //         if (!isExists) {
-    //             addedDonationArray.push(...donatedItems, cardOne);
-    //             localStorage.setItem("donation", JSON.stringify(addedDonationArray));
-    //             swal("Good job!", "Donation added successfully!", "success");
-    //         }
-    //         else {
-    //             swal("Alert!", "Already added", "warning");
-    //         }
-    //     }
-    // }
 
     return (
         <div>
@@ -61,6 +52,35 @@ const DonationDetails = ({ cardOne }) => {
                     </div>
                 </div>
             </div>
+
+            {/* ........................ */}
+
+
+            <div>
+                {/* {noDataFound ? (
+                    <p className="h-[80vh] flex justify-center items-center">{noDataFound}</p>
+                ) : (
+                    <div>
+                        <div className="grid grid-cols-2 gap-5">
+                            {
+                                isShow ? donationToDisplay.map((cardOne) => (
+                                    <DonationItems key={cardOne.id} cardOne={cardOne}></DonationItems>
+                                ))
+
+                                    : donationToDisplay.slice(0, 4).map((cardOne) => (
+                                        <DonationItems key={cardOne.id} cardOne={cardOne}></DonationItems>
+                                    ))
+                            }
+                        </div>
+
+                        {donationToDisplay.length > 4 && <button onClick={() => setIsShow(!isShow)} className="px-5 bg-green-200 block mx-auto">
+                            {isShow ? "See less" : "See more"}
+                        </button>}
+                    </div>
+                )} */}
+            </div>
+
+
         </div>
     );
 };

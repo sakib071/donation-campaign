@@ -26,7 +26,7 @@ const Cards = ({ cards }) => {
         <div>
             <div>
                 <figure className="opacity-20">
-                    <img className="w-full lg:h-[70vh] object-cover" src="/public/images/banner.jpeg" alt="" />
+                    <img className="w-full lg:h-[70vh] object-cover" src="https://i.ibb.co/Tc9j5h5/banner.jpg" alt="" />
                 </figure>
                 <div className="absolute bottom-80 lg:bottom-96 left-1/2 flex flex-col text-center -translate-x-2/4  rounded-md">
                     <p className="text-2xl lg:text-5xl font-bold m-5 lg:m-10">I Grow By Helping People In Need</p>

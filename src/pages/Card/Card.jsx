@@ -8,17 +8,13 @@ const Card = () => {
     const { id } = useParams();
     const cards = useLoaderData();
 
-    // console.log(cards);
-    // console.log(id);
-
     useEffect(() => {
         const findCard = cards.find(card => card.id == id)
         setCardOne(findCard);
-        // console.log(findCard);
+
     }, [id, cards])
 
 
-    // console.log(cardOne);
 
     return (
         <div>

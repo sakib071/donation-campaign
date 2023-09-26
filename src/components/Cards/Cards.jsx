@@ -1,5 +1,6 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import DonationCard from "./DonationCard";
+
 
 const Cards = ({ cards }) => {
 
@@ -32,5 +33,8 @@ const Cards = ({ cards }) => {
         </div>
     );
 };
+Cards.propTypes = {
+    cards: PropTypes.array.isRequired,
+}
 
 export default Cards;

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
 
 const DonationCard = ({ card }) => {
@@ -18,5 +18,9 @@ const DonationCard = ({ card }) => {
 
     );
 };
+DonationCard.propTypes = {
+    card: PropTypes.array.isRequired,
+}
+
 
 export default DonationCard;

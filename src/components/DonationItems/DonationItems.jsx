@@ -1,7 +1,7 @@
-
+import PropTypes from 'prop-types';
 const DonationItems = ({ cardOne }) => {
 
-    const { picture, title, price, text_button_bg_color, card_bg_color } = cardOne || {}
+    const { picture, title, category, price, text_button_bg_color, card_bg_color } = cardOne || {}
     return (
         <div>
             <div className="flex justify-center items-center h[80vh]">
@@ -13,7 +13,7 @@ const DonationItems = ({ cardOne }) => {
                     <div className="p-6">
                         <h6 className="mb-4 w-[7rem] rounded-md block text-base font-semibold uppercase text-center"
                             style={{ color: text_button_bg_color, backgroundColor: card_bg_color }}>
-
+                            {category}
                         </h6>
                         <h4 className="mb-2 text-2xl font-semibold text-black">
                             {title}
@@ -25,13 +25,15 @@ const DonationItems = ({ cardOne }) => {
                         >
                             View Details
                         </button>
-
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };
+DonationItems.propTypes = {
+    cardOne: PropTypes.array.isRequired,
+}
+
 
 export default DonationItems;

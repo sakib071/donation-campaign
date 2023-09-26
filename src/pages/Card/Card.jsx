@@ -15,7 +15,6 @@ const Card = () => {
     }, [id, cards])
 
 
-
     return (
         <div>
             <DonateCard cardOne={cardOne}></DonateCard>

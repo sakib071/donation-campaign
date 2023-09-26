@@ -5,11 +5,10 @@ import swal from 'sweetalert';
 
 const DonationDetails = ({ cardOne }) => {
 
-    const { id, picture, title, price, text_button_bg_color, card_bg_color } = cardOne || {}
+    const { picture, title, price, text_button_bg_color, card_bg_color } = cardOne || {}
 
     const [donationToDisplay, setDonationToDisplay] = useState([]);
     const [noDataFound, setNoDataFound] = useState(false);
-    const [isShow, setIsShow] = useState(false)
 
     useEffect(() => {
         const donatedItems = JSON.parse(localStorage.getItem("donation"));
@@ -52,35 +51,6 @@ const DonationDetails = ({ cardOne }) => {
                     </div>
                 </div>
             </div>
-
-            {/* ........................ */}
-
-
-            <div>
-                {/* {noDataFound ? (
-                    <p className="h-[80vh] flex justify-center items-center">{noDataFound}</p>
-                ) : (
-                    <div>
-                        <div className="grid grid-cols-2 gap-5">
-                            {
-                                isShow ? donationToDisplay.map((cardOne) => (
-                                    <DonationItems key={cardOne.id} cardOne={cardOne}></DonationItems>
-                                ))
-
-                                    : donationToDisplay.slice(0, 4).map((cardOne) => (
-                                        <DonationItems key={cardOne.id} cardOne={cardOne}></DonationItems>
-                                    ))
-                            }
-                        </div>
-
-                        {donationToDisplay.length > 4 && <button onClick={() => setIsShow(!isShow)} className="px-5 bg-green-200 block mx-auto">
-                            {isShow ? "See less" : "See more"}
-                        </button>}
-                    </div>
-                )} */}
-            </div>
-
-
         </div>
     );
 };

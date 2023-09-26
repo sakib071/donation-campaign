@@ -6,7 +6,6 @@ const DonateCard = ({ cardOne }) => {
     const { id, picture, title, price, description, benefits, text_button_bg_color } = cardOne || {}
 
     const addedDonationArray = [];
-    console.log("image show: ", id);
     const handleAddDonation = () => {
 
         const donatedItems = JSON.parse(localStorage.getItem("donation"));

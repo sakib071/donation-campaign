@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 const DonationItems = ({ cardOne }) => {
 
     const { picture, title, category, price, text_button_bg_color, card_bg_color } = cardOne || {}
+    
     return (
         <div>
             <div className="flex justify-center items-center h[80vh]">
@@ -11,7 +12,7 @@ const DonationItems = ({ cardOne }) => {
                     </div>
 
                     <div className="p-6">
-                        <h6 className="mb-4 w-[7rem] rounded-md block text-base font-semibold uppercase text-center"
+                        <h6 className="mb-4 w-[7rem] rounded-md block text-base font-semibold text-center"
                             style={{ color: text_button_bg_color, backgroundColor: card_bg_color }}>
                             {category}
                         </h6>
